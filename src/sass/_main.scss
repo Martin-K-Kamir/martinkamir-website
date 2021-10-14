@@ -1,0 +1,36 @@
+@import '_variables';
+
+.main {
+  padding: 5rem 0 5rem 8rem;
+
+  display: grid;
+  grid-template-rows: 1fr repeat(3, min-content) 1fr;
+
+  &__logo {
+    width: 4rem;
+    align-self: start;
+  }
+
+  &__title {
+    font-size: 5.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $clr-grey-1;
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  &__btn-container {
+    margin-top: 3rem;
+
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__social-container {
+    align-self: end;
+  }
+}

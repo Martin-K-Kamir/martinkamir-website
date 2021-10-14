@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martin Kamír | Frontend developer</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script defer src="src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__main">
+        <div class="main height-full sticky">
+          <div class="main__logo">
+            <svg
+              x="0px"
+              y="150px"
+              viewBox="0 0 100 66"
+              style="enable-background: new 0 0 100 66"
+              xml:space="preserve"
+            >
+              <style type="text/css"></style>
+              <path
+                d="M13.52,40.79L2.15,60.14C1.54,61.19,2.29,62.5,3.5,62.5h22.74c1.21,0,1.96-1.31,1.35-2.36L16.22,40.79
+          C15.62,39.76,14.13,39.76,13.52,40.79z"
+              />
+              <path
+                d="M61.65,58.98L61.65,58.98c-11.43,6.6-26.04,2.68-32.64-8.75L4.11,7.09C3.78,6.53,3.97,5.81,4.54,5.48l0,0
+          c11.43-6.6,26.04-2.68,32.64,8.75l24.91,43.14C62.41,57.93,62.22,58.65,61.65,58.98z"
+              />
+              <path
+                d="M97.98,58.98L97.98,58.98c-11.43,6.6-26.04,2.68-32.64-8.75L40.43,7.09c-0.33-0.56-0.13-1.28,0.43-1.61l0,0
+          C52.29-1.12,66.9,2.8,73.5,14.23l24.91,43.14C98.74,57.93,98.54,58.65,97.98,58.98z"
+              />
+              <g></g>
+            </svg>
+          </div>
+          <h1 class="main__title">coming soon</h1>
+          <p class="main__subtitle">
+            Website is under construction, follow me for more updates.
+          </p>
+          <div class="main__btn-container">
+            <button class="btn btn--full btn-projects">My projects</button>
+            <button
+              class="btn btn--border btn-copy"
+              data-clipboard-text="martin.k.kamir@gmail.com"
+            >
+              <span class="invisible">Copy email</span>
+              <span class="visible">Contact me</span>
+            </button>
+          </div>
+          <div class="main__social-container">
+            <div class="social">
+              <p class="social__text">Follow me</p>
+              <a
+                class="social__link"
+                href="https://github.com/Martin-K-Kamir"
+                target="_blank"
+              >
+                <svg class="social__icon" width="32" height="32">
+                  <use href="bootstrap-icons.svg#github" />
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="https://www.instagram.com/ytramrimak/?hl=cs"
+                target="_blank"
+              >
+                <svg class="social__icon" width="32" height="32">
+                  <use href="bootstrap-icons.svg#instagram" />
+                </svg>
+              </a>
+              <a
+                class="social__link"
+                href="https://www.linkedin.com/in/martin-kam%C3%ADr-2967aa222/"
+                target="_blank"
+              >
+                <svg class="social__icon" width="32" height="32">
+                  <use href="bootstrap-icons.svg#linkedin" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__white-slider height-full width-full hidden"></div>
+
+        <div class="content__projects width-full hidden">
+          <div class="projects">
+            <div class="projects__box">
+              <a
+                class="projects__title"
+                href="https://bmicalc-martinkamir.netlify.app/"
+                target="_blank"
+                >BMIcalc</a
+              >
+              <a
+                class="projects__subtitle"
+                href="https://github.com/Martin-K-Kamir/BMI-calculator"
+                target="_blank"
+                >Calculates your BMI</a
+              >
+            </div>
+            <div class="projects__box">
+              <a
+                class="projects__title"
+                href="https://forkify-martinkkamir.netlify.app/"
+                target="_blank"
+                >Forkify</a
+              >
+              <a
+                class="projects__subtitle"
+                href="https://github.com/Martin-K-Kamir/forkify"
+                target="_blank"
+                >Search over 1.000.000 recipes</a
+              >
+            </div>
+            <div class="projects__box">
+              <a
+                class="projects__title"
+                href="https://budgety-martinkamir.netlify.app/"
+                target="_blank"
+                >Budgety</a
+              >
+              <a
+                class="projects__subtitle"
+                href="https://github.com/Martin-K-Kamir/Budgety"
+                target="_blank"
+                >Manage your budget</a
+              >
+            </div>
+            <div class="projects__box">
+              <a
+                class="projects__title"
+                href="https://nexter-martinkamir.netlify.app/"
+                target="_blank"
+                >Nexter</a
+              >
+              <a
+                class="projects__subtitle"
+                href="https://github.com/Martin-K-Kamir/Nexter"
+                target="_blank"
+                >Website for real estate agency</a
+              >
+            </div>
+            <div class="projects__box">
+              <a
+                class="projects__title"
+                href="https://pig-game-martinkamir.netlify.app/"
+                target="_blank"
+                >Pig game</a
+              >
+              <a
+                class="projects__subtitle"
+                href="https://github.com/Martin-K-Kamir/Pig-game"
+                target="_blank"
+                >Dice game</a
+              >
+            </div>
+            <div class="projects__box">
+              <a
+                class="projects__title"
+                href="https://bankist-website-martinkamir.netlify.app/"
+                target="_blank"
+                >Bankist</a
+              >
+              <a
+                class="projects__subtitle"
+                href="https://github.com/Martin-K-Kamir/Bankist-website"
+                target="_blank"
+              >
+                Bank webesite and internet banking app
+              </a>
+            </div>
+            <div class="projects__box">
+              <a
+                class="projects__title"
+                href="https://mapty-martinkamir.netlify.app/"
+                target="_blank"
+                >Mapty</a
+              >
+              <a
+                class="projects__subtitle"
+                href="https://github.com/Martin-K-Kamir/Mapty"
+                target="_blank"
+                >Workout app</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="content__img-container height-full">
+          <img
+            class="content__img height-full width-full"
+            src="hero.jpg"
+            alt="hero image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

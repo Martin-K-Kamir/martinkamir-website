@@ -1,0 +1,53 @@
+@import '_variables';
+
+.btn > * {
+  transition: all 0.4s;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  width: 18rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 0;
+
+  transition: all 0.1s ease-out;
+
+  &--full {
+    color: $clr-tertiary;
+    background-color: $clr-primary;
+    border: $btn-border;
+  }
+
+  &--border {
+    color: $clr-primary;
+    background-color: transparent;
+    border: $btn-border;
+
+    & .visible {
+      position: absolute;
+      top: 1rem; // Center text
+      @include centerAbsolute;
+    }
+
+    & .invisible {
+      position: absolute;
+      top: 1rem; // Center text
+      left: -100%;
+    }
+
+    &:hover .visible {
+      transform: translateX(200%);
+    }
+
+    &:hover .invisible {
+      transform: translateX(100%);
+      @include centerAbsolute;
+    }
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

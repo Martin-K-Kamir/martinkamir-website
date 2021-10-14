@@ -1,0 +1,31 @@
+//$ Colors -------------------------------------
+$clr-primary: #ffd100;
+$clr-secondary: #000000;
+$clr-tertiary: #ffffff;
+
+$clr-grey-1: #7f7f7f;
+$clr-grey-2: #b1b1b1;
+
+//$ Fonts -------------------------------------
+$font-primary: 'Montserrat', sans-serif;
+
+//$ Animations -------------------------------------
+$animation-slide-in-left: slide-in-left 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+$animation-slide-in-top: slide-in-top 1.5s cubic-bezier(0.2, 0.6, 0.2, 1);
+
+//$ Transitions -------------------------------------
+$transition-move-in-right: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+
+//$ Others... -------------------------------------
+$btn-border: 0.2rem solid $clr-primary;
+
+@mixin centerAbsolute {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+$bp-largest: 95em;
+$bp-biggest: 85em;
+$bp-medium: 75em;
+$bp-smallest: 21.875em;
+$bp-tiniest: 20em;

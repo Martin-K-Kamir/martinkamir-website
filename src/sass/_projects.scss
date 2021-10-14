@@ -1,0 +1,37 @@
+@import '_variables';
+
+.projects {
+  padding: 20rem;
+
+  display: inline-grid;
+  gap: 10rem;
+
+  animation: $animation-slide-in-top;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
+
+  &__box {
+    transition: $transition-move-in-right;
+
+    &:hover {
+      transition: $transition-move-in-right;
+      margin-left: 5rem;
+    }
+  }
+
+  &__title {
+    color: $clr-tertiary;
+    font-size: 9rem;
+    font-weight: 800;
+
+    @media only screen and (max-width: $bp-biggest) {
+      font-size: 7rem;
+    }
+  }
+
+  &__subtitle {
+    color: $clr-primary;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}

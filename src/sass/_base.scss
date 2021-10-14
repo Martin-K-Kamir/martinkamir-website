@@ -1,0 +1,52 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56%;
+  }
+  @media only screen and (max-width: $bp-biggest) {
+    font-size: 53%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  color: $clr-secondary;
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 65rem 1fr;
+}

@@ -1,0 +1,25 @@
+@import '_variables';
+
+.content {
+  position: relative;
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__white-slider {
+    position: absolute;
+    background-color: $clr-tertiary;
+
+    animation: $animation-slide-in-left;
+  }
+
+  &__projects {
+    position: absolute;
+    background-color: $clr-secondary;
+
+    animation: $animation-slide-in-left;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+}

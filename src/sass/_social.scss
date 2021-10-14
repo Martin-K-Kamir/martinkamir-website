@@ -1,0 +1,23 @@
+@import '_variables';
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+
+  &__text {
+    margin-right: 1.5rem;
+    color: $clr-grey-2;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  &__link {
+    color: $clr-grey-2;
+    transform: translateY(0.25rem); // Y center with text
+  }
+
+  &__icon {
+    height: 1.7rem;
+  }
+}
